@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Changelog — Meow Client</title>
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.svg" alt="Meow Client" class="brand-logo">
+      <span class="brand-name">Meow Client</span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="menu">☰</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="changelog.html" class="active">Changelog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="meow-client-first%20release!.jar" class="btn btn-pink btn-nav" download>Download</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero hero-small">
+  <h1 class="hero-title">Changelog</h1>
+  <p class="hero-sub">Everything new in Meow Client.</p>
+</header>
+
+<section class="section">
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <div class="timeline-version">v1.0.0 <span class="timeline-tag">Latest</span></div>
+        <div class="timeline-date">Initial release</div>
+        <ul>
+          <li>Pink ClickGUI opened with Right Shift</li>
+          <li>PvP modules: Keystrokes, CPS, Combo, Reach, ArmorHud, PotionHud, CrosshairMod</li>
+          <li>HUD modules: FPS, Coords, Ping, Biome, Time, Session, Memory, Server IP</li>
+          <li>Visuals modules: Zoom, Fullbright, Custom Sky, Particles, Hitboxes, Nametags</li>
+          <li>Player modules: Toggle Sprint, Toggle Sneak, Chat Mods, Nick Hider, AutoGG</li>
+          <li>Automatic JSON config saving</li>
+          <li>Animated starfield background</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <div class="timeline-version">v0.9.0 <span class="timeline-tag">Beta</span></div>
+        <div class="timeline-date">Pre-release</div>
+        <ul>
+          <li>First working build for Minecraft 1.21.11</li>
+          <li>Basic module system and event bus</li>
+          <li>Config manager (save / load)</li>
+          <li>Fixed Yarn mapping issues</li>
+          <li>Fixed build errors on Fabric Loom 1.13.6</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <div class="timeline-version">v0.5.0 <span class="timeline-tag">Alpha</span></div>
+        <div class="timeline-date">Early development</div>
+        <ul>
+          <li>Project started</li>
+          <li>Initial structure: modules, settings, events</li>
+          <li>First tests on Fabric 1.21.1, later ported to 1.21.11</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <img src="assets/logo.svg" alt="" class="footer-logo">
+      <p class="footer-tag">Meow Client — PvP + Visuals for Minecraft 1.21.11.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Product</h4>
+      <a href="features.html">Features</a>
+      <a href="changelog.html">Changelog</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+  </div>
+  <p class="footer-copy">© 2026 Meow Client. Not affiliated with Mojang or Microsoft.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
