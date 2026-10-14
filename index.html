@@ -1,6 +1,3 @@
-cd C:\Users\turkiandgabe\Desktop\meow-website
-
-$code = @'
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,7 +39,7 @@ $code = @'
       <li><a href="features.html">Features</a></li>
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="changelog.html">Changelog</a></li>
-      <li><a href="meow-client-1.0.0.jar" class="btn btn-pink btn-nav" download>Download</a></li>
+      <li><a href="https://github.com/echothebest/meow-website/releases/download/untagged-338cf8a7bff4ed38c516/meow-client-first.release.jar" class="btn btn-pink btn-nav" download>Download</a></li>
     </ul>
   </div>
 </nav>
@@ -52,7 +49,7 @@ $code = @'
   <h1 class="hero-title">Meow Client</h1>
   <p class="hero-sub">A lightweight PvP + Visuals client for Minecraft 1.21.11 (Fabric).</p>
   <div class="hero-buttons">
-    <a href="meow-client-1.0.0.jar" class="btn btn-pink" download>Download Meow Client</a>
+    <a href="https://github.com/echothebest/meow-website/releases/download/untagged-338cf8a7bff4ed38c516/meow-client-first.release.jar" class="btn btn-pink" download>Download Meow Client</a>
     <a href="https://github.com/echothebest/meow-website" class="btn btn-outline" target="_blank" rel="noopener">View on GitHub</a>
   </div>
   <div class="chip">v1.0.0 &nbsp;·&nbsp; 1.21.11 &nbsp;·&nbsp; Fabric</div>
@@ -97,7 +94,7 @@ $code = @'
 <section class="section download-section">
   <h2 class="section-title">Ready to play?</h2>
   <p class="download-sub">Download the jar, drop it into your mods folder, launch Fabric.</p>
-  <a href="meow-client-1.0.0.jar" class="btn btn-pink btn-big" download>Download Meow Client</a>
+  <a href="https://github.com/echothebest/meow-website/releases/download/untagged-338cf8a7bff4ed38c516/meow-client-first.release.jar" class="btn btn-pink btn-big" download>Download Meow Client</a>
   <p class="download-meta">Requires Minecraft 1.21.11 + Fabric Loader</p>
 </section>
 
@@ -146,6 +143,3 @@ $code = @'
 <script src="script.js"></script>
 </body>
 </html>
-'@
-
-[System.IO.File]::WriteAllText("$PWD\index.html", $code, (New-Object System.Text.UTF8Encoding $false))
