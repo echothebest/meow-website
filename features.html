@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Features — Meow Client</title>
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.svg" alt="Meow Client" class="brand-logo">
+      <span class="brand-name">Meow Client</span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="menu">☰</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="features.html" class="active">Features</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="changelog.html">Changelog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="meow-client-first%20release!.jar" class="btn btn-pink btn-nav" download>Download</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero hero-small">
+  <h1 class="hero-title">Features</h1>
+  <p class="hero-sub">Every module in Meow Client, grouped by category.</p>
+</header>
+
+<section class="section">
+  <h2 class="section-title">⚔️ PvP</h2>
+  <div class="grid grid-3">
+    <div class="card card-flat"><h3>Keystrokes</h3><p>WASD + space + mouse buttons on screen with press animation.</p></div>
+    <div class="card card-flat"><h3>CPS Display</h3><p>Left + right click CPS counter with smoothing.</p></div>
+    <div class="card card-flat"><h3>Combo Counter</h3><p>Tracks consecutive hits on your crosshair target.</p></div>
+    <div class="card card-flat"><h3>Reach Display</h3><p>Shows the distance of your last hit.</p></div>
+    <div class="card card-flat"><h3>Cooldown Indicator</h3><p>Attack cooldown bar near the crosshair.</p></div>
+    <div class="card card-flat"><h3>ArmorHud</h3><p>Your armor + durability + item in hand.</p></div>
+    <div class="card card-flat"><h3>PotionHud</h3><p>Active potion effects with timers.</p></div>
+    <div class="card card-flat"><h3>HitColor</h3><p>Tints the entity you hit red for a tick.</p></div>
+    <div class="card card-flat"><h3>DamageTint</h3><p>Red vignette overlay when you take damage.</p></div>
+    <div class="card card-flat"><h3>CrosshairMod</h3><p>Custom crosshair shapes and colors.</p></div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">🖥️ HUD</h2>
+  <div class="grid grid-3">
+    <div class="card card-flat"><h3>Watermark</h3><p>Meow Client text with version in the corner.</p></div>
+    <div class="card card-flat"><h3>FPS Display</h3><p>FPS counter with color coding.</p></div>
+    <div class="card card-flat"><h3>Coordinates</h3><p>XYZ + chunk coordinates.</p></div>
+    <div class="card card-flat"><h3>Ping Display</h3><p>Current ping in milliseconds.</p></div>
+    <div class="card card-flat"><h3>Direction Display</h3><p>Facing direction N/S/E/W.</p></div>
+    <div class="card card-flat"><h3>Biome Display</h3><p>Current biome name.</p></div>
+    <div class="card card-flat"><h3>Time Display</h3><p>In-game + real-world clock.</p></div>
+    <div class="card card-flat"><h3>Session Timer</h3><p>How long you've been playing.</p></div>
+    <div class="card card-flat"><h3>Item Counter</h3><p>Counts specific items in your inventory.</p></div>
+    <div class="card card-flat"><h3>Memory Display</h3><p>Used / max RAM.</p></div>
+    <div class="card card-flat"><h3>Server IP Display</h3><p>Current server address.</p></div>
+    <div class="card card-flat"><h3>Scoreboard Tweaks</h3><p>Hide, reorder, or change scoreboard opacity.</p></div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">✨ Visuals</h2>
+  <div class="grid grid-3">
+    <div class="card card-flat"><h3>Zoom</h3><p>Hold a keybind to smoothly zoom in.</p></div>
+    <div class="card card-flat"><h3>Fullbright</h3><p>Max gamma for visibility in the dark.</p></div>
+    <div class="card card-flat"><h3>Custom Sky</h3><p>Override sky color and time of day visually.</p></div>
+    <div class="card card-flat"><h3>Particles Control</h3><p>Reduce or hide particles.</p></div>
+    <div class="card card-flat"><h3>Hitboxes</h3><p>Render entity hitboxes client-side.</p></div>
+    <div class="card card-flat"><h3>Nametags</h3><p>Bigger, cleaner nametags with ping + health.</p></div>
+    <div class="card card-flat"><h3>Capes</h3><p>Custom cape on your player.</p></div>
+    <div class="card card-flat"><h3>Wings</h3><p>Cosmetic wings behind your player.</p></div>
+    <div class="card card-flat"><h3>China Hat</h3><p>Cosmetic cone hat above your player.</p></div>
+    <div class="card card-flat"><h3>Motion Blur</h3><p>Smooth motion blur post-processing.</p></div>
+    <div class="card card-flat"><h3>No Hurt Cam</h3><p>Removes camera shake when hurt.</p></div>
+    <div class="card card-flat"><h3>Low Fire</h3><p>Lowers the fire overlay on screen.</p></div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">👤 Player</h2>
+  <div class="grid grid-3">
+    <div class="card card-flat"><h3>Toggle Sprint</h3><p>Auto-sprint with a HUD indicator.</p></div>
+    <div class="card card-flat"><h3>Toggle Sneak</h3><p>Auto-sneak toggle.</p></div>
+    <div class="card card-flat"><h3>Chat Mods</h3><p>Timestamps, infinite history, copy chat.</p></div>
+    <div class="card card-flat"><h3>Nick Hider</h3><p>Hides your real username in screenshots and chat.</p></div>
+    <div class="card card-flat"><h3>AutoGG</h3><p>Says "gg" after a game ends.</p></div>
+    <div class="card card-flat"><h3>AutoTip</h3><p>Sends /tip to active boosters.</p></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <img src="assets/logo.svg" alt="" class="footer-logo">
+      <p class="footer-tag">Meow Client — PvP + Visuals for Minecraft 1.21.11.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Product</h4>
+      <a href="features.html">Features</a>
+      <a href="changelog.html">Changelog</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+  </div>
+  <p class="footer-copy">© 2026 Meow Client. Not affiliated with Mojang or Microsoft.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
