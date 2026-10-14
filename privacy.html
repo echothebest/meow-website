@@ -1,3 +1,4 @@
+$code = @'
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +27,7 @@
       <li><a href="features.html">Features</a></li>
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="changelog.html">Changelog</a></li>
-      <li><a href="meow-client-first%20release!.jar" class="btn btn-pink btn-nav" download>Download</a></li>
+      <li><a href="https://github.com/echothebest/meow-website/releases/download/untagged-338cf8a7bff4ed38c516/meow-client-first.release.jar" class="btn btn-pink btn-nav" download>Download</a></li>
     </ul>
   </div>
 </nav>
@@ -38,46 +39,30 @@
 
 <section class="section">
   <div class="legal">
-
     <h2>1. Overview</h2>
     <p>Meow Client respects your privacy. This policy explains what data the Client and this website do (and do not) collect.</p>
-
     <h2>2. What We Do Not Collect</h2>
     <p>Meow Client does <strong>not</strong> collect, transmit, or store:</p>
     <ul>
       <li>Your Minecraft username or account details.</li>
       <li>Your IP address.</li>
       <li>Your chat messages, worlds, or gameplay data.</li>
-      <li>Your hardware or system information.</li>
       <li>Any telemetry, analytics, or usage statistics.</li>
     </ul>
-
     <h2>3. The Client Runs Locally</h2>
-    <p>Everything Meow Client does happens on your own computer. The Client does not phone home, does not connect to any external server, and does not send any data anywhere.</p>
-
+    <p>Everything Meow Client does happens on your own computer. The Client does not phone home or connect to any external server.</p>
     <h2>4. Config Files</h2>
-    <p>Meow Client saves your module settings to a local JSON file at:</p>
-    <p><code>.minecraft/config/meow-client/config.json</code></p>
-    <p>This file stays on your computer. It contains only your module toggles and settings — no personal information.</p>
-
+    <p>Meow Client saves your settings to <code>.minecraft/config/meow-client/config.json</code>. This file stays on your computer.</p>
     <h2>5. This Website</h2>
-    <p>This website is hosted on GitHub Pages. GitHub may collect basic access logs (IP address, browser type) as part of serving any website. We do not have access to those logs and do not use them.</p>
-
+    <p>This website is hosted on GitHub Pages. GitHub may collect basic access logs as part of serving any website. We do not have access to those logs.</p>
     <h2>6. Cookies</h2>
-    <p>This website does not use cookies. It uses your browser's <code>sessionStorage</code> only to remember whether you have already seen the intro animation during the current session. This data stays on your device and is cleared when you close the tab.</p>
-
+    <p>This website does not use cookies. It uses sessionStorage only to remember whether you have seen the intro animation during the current session.</p>
     <h2>7. Third-Party Services</h2>
-    <p>The only third-party service this website uses is <strong>Google Fonts</strong>, to load the fonts used on the site. Google may log the request. We do not control or access those logs.</p>
-
-    <h2>8. Children's Privacy</h2>
-    <p>Meow Client is not directed at children under 13. We do not knowingly collect data from anyone.</p>
-
-    <h2>9. Changes to This Policy</h2>
+    <p>The only third-party service this website uses is Google Fonts. Google may log the request.</p>
+    <h2>8. Changes to This Policy</h2>
     <p>We may update this Privacy Policy from time to time. Changes will be posted on this page.</p>
-
-    <h2>10. Contact</h2>
-    <p>For questions about this Privacy Policy, open an issue on the <a href="https://github.com/echothebest/meow-website" target="_blank" rel="noopener">GitHub repository</a>.</p>
-
+    <h2>9. Contact</h2>
+    <p>For questions, open an issue on the <a href="https://github.com/echothebest/meow-website" target="_blank" rel="noopener">GitHub repository</a>.</p>
   </div>
 </section>
 
@@ -108,3 +93,6 @@
 <script src="script.js"></script>
 </body>
 </html>
+'@
+
+[System.IO.File]::WriteAllText("$PWD\privacy.html", $code, (New-Object System.Text.UTF8Encoding $false))
