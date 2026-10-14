@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meow Client — PvP + Visuals for Minecraft 1.21.11</title>
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="intro-overlay">
+  <div class="terminal-window">
+    <div class="terminal-header">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+      <span class="terminal-title">meow-client — terminal</span>
+    </div>
+    <div class="terminal-body" id="terminal-body"></div>
+  </div>
+  <a id="skip-intro" href="#">[ skip ]</a>
+</div>
+
+<canvas id="starfield"></canvas>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.svg" alt="Meow Client" class="brand-logo">
+      <span class="brand-name">Meow Client</span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="menu">☰</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="changelog.html">Changelog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="downloads/meow-client-1.0.0.jar" class="btn btn-pink btn-nav" download>Download</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <img src="assets/logo.svg" alt="" class="hero-logo">
+  <h1 class="hero-title">Meow Client</h1>
+  <p class="hero-sub">A lightweight PvP + Visuals client for Minecraft 1.21.11 (Fabric).</p>
+  <div class="hero-buttons">
+    <a href="downloads/meow-client-1.0.0.jar" class="btn btn-pink" download>Download Meow Client</a>
+    <a href="https://github.com/echothebest/meow-website" class="btn btn-outline" target="_blank" rel="noopener">View on GitHub</a>
+  </div>
+  <div class="chip">v1.0.0 &nbsp;·&nbsp; 1.21.11 &nbsp;·&nbsp; Fabric</div>
+</header>
+
+<section class="section">
+  <h2 class="section-title">What's inside</h2>
+  <div class="grid grid-3">
+    <a href="features.html" class="card">
+      <div class="card-icon">⚔️</div>
+      <h3>PvP</h3>
+      <p>Keystrokes, CPS counter, combo tracker, reach display, armor HUD, potion HUD and more.</p>
+    </a>
+    <a href="features.html" class="card">
+      <div class="card-icon">🖥️</div>
+      <h3>HUD</h3>
+      <p>FPS, coords, ping, biome, session timer, memory, server IP — fully draggable in a HUD editor.</p>
+    </a>
+    <a href="features.html" class="card">
+      <div class="card-icon">✨</div>
+      <h3>Visuals</h3>
+      <p>Zoom, fullbright, custom sky, particles control, hitboxes, nametags, capes and cosmetic wings.</p>
+    </a>
+    <a href="features.html" class="card">
+      <div class="card-icon">🐱</div>
+      <h3>ClickGUI</h3>
+      <p>Full-screen pink interface opened with Right Shift. Toggles, sliders, dropdowns, and a color picker.</p>
+    </a>
+    <a href="features.html" class="card">
+      <div class="card-icon">⚙️</div>
+      <h3>Config</h3>
+      <p>Every module and setting saves to JSON automatically. Reloads exactly how you left it.</p>
+    </a>
+    <a href="features.html" class="card">
+      <div class="card-icon">💖</div>
+      <h3>Server-safe</h3>
+      <p>No hacks, no exploits. Every module is client-side and legit — safe on Hypixel, Minemen, PvP Legacy.</p>
+    </a>
+  </div>
+</section>
+
+<section class="section download-section">
+  <h2 class="section-title">Ready to play?</h2>
+  <p class="download-sub">Download the jar, drop it into your mods folder, launch Fabric.</p>
+  <a href="downloads/meow-client-1.0.0.jar" class="btn btn-pink btn-big" download>Download Meow Client v1.0.0</a>
+  <p class="download-meta">~300 KB &nbsp;·&nbsp; Requires Minecraft 1.21.11 + Fabric Loader</p>
+</section>
+
+<section class="section">
+  <h2 class="section-title">Requirements</h2>
+  <div class="grid grid-3">
+    <div class="card card-flat">
+      <h3>Minecraft Java 1.21.11</h3>
+      <p>Vanilla or any launcher that lets you run 1.21.11.</p>
+    </div>
+    <div class="card card-flat">
+      <h3>Fabric Loader 0.18.1+</h3>
+      <p>Install Fabric from the official installer.</p>
+    </div>
+    <div class="card card-flat">
+      <h3>Fabric API 0.137.0+1.21.11</h3>
+      <p>Drop Fabric API in your mods folder alongside Meow Client.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <img src="assets/logo.svg" alt="" class="footer-logo">
+      <p class="footer-tag">Meow Client — PvP + Visuals for Minecraft 1.21.11.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Product</h4>
+      <a href="features.html">Features</a>
+      <a href="changelog.html">Changelog</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+  </div>
+  <p class="footer-copy">© 2026 Meow Client. Not affiliated with Mojang or Microsoft.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
