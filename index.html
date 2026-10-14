@@ -40,7 +40,7 @@
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="changelog.html">Changelog</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a href="downloads/meow-client-1.0.0.jar" class="btn btn-pink btn-nav" download>Download</a></li>
+      <li><a href="meow-client-first%20release!.jar" class="btn btn-pink btn-nav" download>Download</a></li>
     </ul>
   </div>
 </nav>
@@ -50,7 +50,7 @@
   <h1 class="hero-title">Meow Client</h1>
   <p class="hero-sub">A lightweight PvP + Visuals client for Minecraft 1.21.11 (Fabric).</p>
   <div class="hero-buttons">
-    <a href="downloads/meow-client-1.0.0.jar" class="btn btn-pink" download>Download Meow Client</a>
+    <a href="meow-client-first%20release!.jar" class="btn btn-pink" download>Download Meow Client</a>
     <a href="https://github.com/echothebest/meow-website" class="btn btn-outline" target="_blank" rel="noopener">View on GitHub</a>
   </div>
   <div class="chip">v1.0.0 &nbsp;·&nbsp; 1.21.11 &nbsp;·&nbsp; Fabric</div>
@@ -95,8 +95,8 @@
 <section class="section download-section">
   <h2 class="section-title">Ready to play?</h2>
   <p class="download-sub">Download the jar, drop it into your mods folder, launch Fabric.</p>
-  <a href="downloads/meow-client-1.0.0.jar" class="btn btn-pink btn-big" download>Download Meow Client v1.0.0</a>
-  <p class="download-meta">~300 KB &nbsp;·&nbsp; Requires Minecraft 1.21.11 + Fabric Loader</p>
+  <a href="meow-client-first%20release!.jar" class="btn btn-pink btn-big" download>Download Meow Client</a>
+  <p class="download-meta">Requires Minecraft 1.21.11 + Fabric Loader</p>
 </section>
 
 <section class="section">
@@ -145,3 +145,5 @@
 <script src="script.js"></script>
 </body>
 </html>
+
+[System.IO.File]::WriteAllText("$PWD\index.html", $code, (New-Object System.Text.UTF8Encoding $false))
