@@ -1,4 +1,3 @@
-$code = @'
 # 🐱 Meow Client — Website
 
 Official landing page for **Meow Client**, a lightweight PvP + Visuals client for **Minecraft Java 1.21.11** running on **Fabric**.
