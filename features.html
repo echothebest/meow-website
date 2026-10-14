@@ -1,3 +1,4 @@
+$code = @'
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,8 +27,7 @@
       <li><a href="features.html" class="active">Features</a></li>
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="changelog.html">Changelog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="meow-client-first%20release!.jar" class="btn btn-pink btn-nav" download>Download</a></li>
+      <li><a href="https://github.com/echothebest/meow-website/releases/download/untagged-338cf8a7bff4ed38c516/meow-client-first.release.jar" class="btn btn-pink btn-nav" download>Download</a></li>
     </ul>
   </div>
 </nav>
@@ -115,7 +115,6 @@
     <div class="footer-col">
       <h4>Support</h4>
       <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
     </div>
     <div class="footer-col">
       <h4>Legal</h4>
@@ -129,3 +128,6 @@
 <script src="script.js"></script>
 </body>
 </html>
+'@
+
+[System.IO.File]::WriteAllText("$PWD\features.html", $code, (New-Object System.Text.UTF8Encoding $false))
