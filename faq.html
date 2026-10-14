@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ — Meow Client</title>
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.svg" alt="Meow Client" class="brand-logo">
+      <span class="brand-name">Meow Client</span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="menu">☰</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="faq.html" class="active">FAQ</a></li>
+      <li><a href="changelog.html">Changelog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="meow-client-first%20release!.jar" class="btn btn-pink btn-nav" download>Download</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero hero-small">
+  <h1 class="hero-title">FAQ</h1>
+  <p class="hero-sub">Frequently asked questions about Meow Client.</p>
+</header>
+
+<section class="section">
+  <div class="faq-list">
+
+    <details class="faq-item">
+      <summary>What is Meow Client?</summary>
+      <p>Meow Client is a lightweight PvP + Visuals client for Minecraft Java Edition 1.21.11 running on Fabric. It adds useful PvP mods, HUD elements, and visual improvements through a pink ClickGUI opened with Right Shift.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Is it a cheat client?</summary>
+      <p>No. Meow Client contains no hacks, no killaura, no ESP, no anticheat bypasses. Every module is client-side and legit — the same style of mods Lunar Client and Badlion Client ship.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Does it work on Hypixel?</summary>
+      <p>Yes. Every module is server-safe. Meow Client doesn't modify packets or do anything that could trigger anticheat.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>What version does it support?</summary>
+      <p>Minecraft Java Edition 1.21.11, on Fabric. Other versions are not supported.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Do I need Fabric?</summary>
+      <p>Yes. Install Fabric Loader 0.18.1 or newer from the official Fabric installer, then drop Fabric API and Meow Client into your mods folder.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>How do I install it?</summary>
+      <p>1. Install Fabric Loader for 1.21.11. 2. Download Fabric API for 1.21.11 and put it in your mods folder. 3. Download Meow Client and put it in the same mods folder. 4. Launch the Fabric profile.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Is it free?</summary>
+      <p>Yes, Meow Client is completely free.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Is it open source?</summary>
+      <p>The website is open source on GitHub. The client source is not currently public.</p>
+    </details>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <img src="assets/logo.svg" alt="" class="footer-logo">
+      <p class="footer-tag">Meow Client — PvP + Visuals for Minecraft 1.21.11.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Product</h4>
+      <a href="features.html">Features</a>
+      <a href="changelog.html">Changelog</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+  </div>
+  <p class="footer-copy">© 2026 Meow Client. Not affiliated with Mojang or Microsoft.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
